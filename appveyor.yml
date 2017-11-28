@@ -21,10 +21,10 @@ before_build:
   # Display minimal restore text
   - cmd: dotnet restore --verbosity m
 build_script:
-  # output will be in ./dotnetcoreangular-to-azure/bin/Release/netcoreapp2.0/publish/
+  # output will be in ./DotNetCoreAngularToAzure/bin/Release/netcoreapp2.0/publish/
   - cmd: dotnet publish -c Release
 artifacts:
- - path: '\dotnetcoreangular-to-azure\bin\Release\netcoreapp2.0\publish'
+ - path: '\DotNetCoreAngularToAzure\bin\Release\netcoreapp2.0\publish'
    name: WebSite
    type: WebDeployPackage
 deploy:
