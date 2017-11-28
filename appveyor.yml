@@ -15,6 +15,7 @@ install:
   - cd DotNetCoreAngularToAzure
   # install modules
   - npm install
+  - node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod
 before_build:
   # Display minimal restore text
   - cmd: dotnet restore --verbosity m
