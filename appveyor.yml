@@ -31,3 +31,5 @@ deploy:
 - provider: Environment
   name: dotnetcoreangulartoazure
   remove_files: true
+after_deploy:
+- ps: .\npm-install.ps1 -Username "%Username%" -Password "%Password%" -AppServiceName "%AppServiceName%" 
