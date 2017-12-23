@@ -32,4 +32,4 @@ deploy:
   name: dotnetcoreangulartoazure
   remove_files: true
 deploy_script:
-- ps: .\npm-install.ps1 -Username $(Username) -Password $(Password) -AppServiceName $(AppServiceName)
+- ps: .\npm-install.ps1 -Username "$($env:Username)" -Password "$($env:Password)" -AppServiceName "$($env:AppServiceName)"
