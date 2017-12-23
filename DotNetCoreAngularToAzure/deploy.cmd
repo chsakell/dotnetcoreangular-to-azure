@@ -1,4 +1,4 @@
-:: 6. Install npm packages at DEPLOYMENT_TARGET 
+:: 6. Install npm packages at DEPLOYMENT_TARGET  
 echo =======  Installing npm packages: Starting at %TIME% ======= 
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
