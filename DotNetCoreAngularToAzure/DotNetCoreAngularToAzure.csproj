@@ -25,20 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include=".deployment" />
-    <Content Include="deploy.cmd" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update=".deployment">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="deploy.cmd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 

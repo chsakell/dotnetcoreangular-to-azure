@@ -27,9 +27,3 @@ artifacts:
  - path: '\DotNetCoreAngularToAzure\bin\Release\netcoreapp2.0\publish'
    name: WebSite
    type: WebDeployPackage
-deploy:
-- provider: Environment
-  name: dotnetcoreangulartoazure
-  remove_files: true
-after_deploy:
-- ps: .\npm-install.ps1 -Username '$dotnetcoretoazure' -Password "qZZWPF1Te3J6kunT36lCugL4g6wSbJjYKt4fB5PiowFjiCr4RfYCRB8vX0yk" -AppServiceName "dotnetcoretoazure"
