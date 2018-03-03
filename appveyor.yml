@@ -28,8 +28,8 @@ artifacts:
   - path: '\DotNetCoreAngularToAzure\bin\Release\netcoreapp2.0\publish'
     name: WebSite
     type: WebDeployPackage
-deploy:
-  - provider: Environment
-    name: Production
-    on:
-      branch: develop
+#deploy:
+#  - provider: Environment
+#    name: Production
+#    on:
+#      branch: develop
