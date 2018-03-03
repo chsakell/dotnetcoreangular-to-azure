@@ -3,6 +3,7 @@ image: Visual Studio 2017
 branches:
   only:
   - master
+  - develop
 clone_depth: 1
 init:
   # Good practise, because Windows
@@ -24,6 +25,11 @@ build_script:
   # output will be in ./DotNetCoreAngularToAzure/bin/Release/netcoreapp2.0/publish/
   - cmd: dotnet publish -c Release
 artifacts:
- - path: '\DotNetCoreAngularToAzure\bin\Release\netcoreapp2.0\publish'
-   name: WebSite
-   type: WebDeployPackage
+  - path: '\DotNetCoreAngularToAzure\bin\Release\netcoreapp2.0\publish'
+    name: WebSite
+    type: WebDeployPackage
+deploy:
+  - provider: Environment
+    name: Production
+    on:
+      branch: master
