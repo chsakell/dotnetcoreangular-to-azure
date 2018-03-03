@@ -32,4 +32,4 @@ deploy:
   - provider: Environment
     name: Production
     on:
-      branch: master
+      branch: develop
